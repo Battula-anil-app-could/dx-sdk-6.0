@@ -396,7 +396,7 @@ where
         // prepare key
         A::managed_type_impl().mb_overwrite(
             temp_handle_1.clone(),
-            storage::protected_keys::ELROND_REWARD_KEY,
+            storage::protected_keys::DHARITRIX_REWARD_KEY,
         );
 
         // load value

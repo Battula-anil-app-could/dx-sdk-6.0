@@ -1,6 +1,6 @@
-multiversx_sc::imports!();
+dharitri_sc::imports!();
 
-#[multiversx_sc::module]
+#[dharitri_sc::module]
 pub trait UpgradeContractModule {
     #[proxy]
     fn vault_proxy(&self, sc_address: ManagedAddress) -> vault::Proxy<Self::Api>;

@@ -1,7 +1,7 @@
-multiversx_sc::imports!();
+dharitri_sc::imports!();
 
 /// Tests event logs.
-#[multiversx_sc::module]
+#[dharitri_sc::module]
 pub trait EventFeatures {
     #[event("event_a")]
     fn event_a(&self, data: u32);

@@ -1,6 +1,6 @@
-multiversx_sc::imports!();
+dharitri_sc::imports!();
 
-#[multiversx_sc::module]
+#[dharitri_sc::module]
 pub trait ForwarderRawSync: super::forwarder_raw_common::ForwarderRawCommon {
     #[endpoint]
     #[payable("EGLD")]

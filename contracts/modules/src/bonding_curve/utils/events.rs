@@ -1,7 +1,7 @@
-multiversx_sc::imports!();
-multiversx_sc::derive_imports!();
+dharitri_sc::imports!();
+dharitri_sc::derive_imports!();
 
-#[multiversx_sc::module]
+#[dharitri_sc::module]
 pub trait EventsModule {
     #[event("buy-token")]
     fn buy_token_event(&self, #[indexed] user: &ManagedAddress, amount: &BigUint);

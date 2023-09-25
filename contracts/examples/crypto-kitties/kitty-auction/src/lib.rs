@@ -1,11 +1,11 @@
 #![no_std]
 
-multiversx_sc::imports!();
+dharitri_sc::imports!();
 
 pub mod auction;
 use auction::*;
 
-#[multiversx_sc::contract]
+#[dharitri_sc::contract]
 pub trait KittyAuction {
     #[init]
     fn init(

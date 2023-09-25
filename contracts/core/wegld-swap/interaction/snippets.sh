@@ -1,8 +1,8 @@
-ALICE="~/multiversx-sdk/testwallets/latest/users/alice.pem"
-BOB="~/multiversx-sdk/testwallets/latest/users/bob.pem"
+ALICE="~/dharitri-sdk/testwallets/latest/users/alice.pem"
+BOB="~/dharitri-sdk/testwallets/latest/users/bob.pem"
 ADDRESS=$(mxpy data load --key=address-testnet-egld-esdt-swap)
 DEPLOY_TRANSACTION=$(mxpy data load --key=deployTransaction-testnet)
-PROXY=https://testnet-gateway.multiversx.com
+PROXY=https://testnet-gateway.dharitri.com
 CHAIN_ID=T
 
 ESDT_SYSTEM_SC_ADDRESS=erd1qqqqqqqqqqqqqqqpqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqzllls8a5w6u

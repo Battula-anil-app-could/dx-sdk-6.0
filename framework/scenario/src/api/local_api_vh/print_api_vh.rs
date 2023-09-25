@@ -1,6 +1,6 @@
 use std::cell::RefCell;
 
-use multiversx_sc::{
+use dharitri_sc::{
     api::{PrintApi, PrintApiImpl},
     types::ManagedBufferCachedBuilder,
 };

@@ -1,9 +1,9 @@
-use multiversx_sc::types::H256;
+use dharitri_sc::types::H256;
 use num_traits::Zero;
 
 use crate::{
     api::StaticApi,
-    multiversx_sc::{
+    dharitri_sc::{
         codec::{CodecFrom, TopEncodeMulti},
         types::ContractCall,
     },

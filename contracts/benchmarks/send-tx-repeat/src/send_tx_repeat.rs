@@ -1,8 +1,8 @@
 #![no_std]
 
-multiversx_sc::imports!();
+dharitri_sc::imports!();
 
-#[multiversx_sc::contract]
+#[dharitri_sc::contract]
 pub trait SendTxRepeat {
     #[init]
     fn init(&self) {}

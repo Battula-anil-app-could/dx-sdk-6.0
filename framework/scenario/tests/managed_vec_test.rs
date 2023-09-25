@@ -1,7 +1,7 @@
 use std::ops::Deref;
 
-use multiversx_sc::types::{BigUint, ManagedVec};
-use multiversx_sc_scenario::api::StaticApi;
+use dharitri_sc::types::{BigUint, ManagedVec};
+use dharitri_sc_scenario::api::StaticApi;
 
 #[test]
 fn test_managed_vec_iter_rev() {

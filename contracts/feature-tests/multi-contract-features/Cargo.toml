@@ -1,7 +1,7 @@
 [package]
 name = "multi-contract-features"
 version = "0.0.0"
-authors = ["Andrei Marinica <andrei.marinica@multiversx.com>"]
+authors = ["Andrei Marinica <andrei.marinica@dharitri.com>"]
 edition = "2021"
 publish = false
 
@@ -11,10 +11,10 @@ path = "src/multi_contract_features.rs"
 [features]
 example_feature = []
 
-[dependencies.multiversx-sc]
+[dependencies.dharitri-sc]
 version = "0.43.4"
 path = "../../../framework/base"
 
-[dev-dependencies.multiversx-sc-scenario]
+[dev-dependencies.dharitri-sc-scenario]
 version = "0.43.4"
 path = "../../../framework/scenario"

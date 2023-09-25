@@ -1,6 +1,6 @@
-multiversx_sc::derive_imports!();
+dharitri_sc::derive_imports!();
 
-use multiversx_sc::{
+use dharitri_sc::{
     api::ManagedTypeApi,
     types::{BigUint, ManagedAddress},
 };

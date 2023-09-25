@@ -1,7 +1,7 @@
 use std::collections::BTreeMap;
 
 use crate::{
-    multiversx_sc::types::heap::Address,
+    dharitri_sc::types::heap::Address,
     scenario_format::serde_raw::{
         AccountRaw, CheckAccountRaw, CheckAccountsRaw, CheckBytesValueRaw, CheckEsdtDataRaw,
         CheckEsdtInstanceRaw, CheckEsdtInstancesRaw, CheckEsdtMapContentsRaw, CheckEsdtMapRaw,
@@ -10,7 +10,7 @@ use crate::{
         ValueSubTree,
     },
 };
-use multiversx_chain_vm::{
+use dharitri_chain_vm::{
     types::VMAddress,
     world_mock::{AccountData, EsdtData},
 };

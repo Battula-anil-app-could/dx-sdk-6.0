@@ -1,6 +1,6 @@
 use forwarder::nft::{Color, ProxyTrait as _};
 
-use multiversx_sc_scenario::{
+use dharitri_sc_scenario::{
     api::StaticApi,
     scenario_model::{
         Account, CheckAccount, CheckStateStep, ScCallStep, SetStateStep, TransferStep,

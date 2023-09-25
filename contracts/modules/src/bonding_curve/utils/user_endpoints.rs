@@ -1,14 +1,14 @@
-multiversx_sc::imports!();
-multiversx_sc::derive_imports!();
+dharitri_sc::imports!();
+dharitri_sc::derive_imports!();
 
-use multiversx_sc::contract_base::ManagedSerializer;
+use dharitri_sc::contract_base::ManagedSerializer;
 
 use crate::bonding_curve::{
     curves::curve_function::CurveFunction,
     utils::{events, storage, structs::BondingCurve},
 };
 
-#[multiversx_sc::module]
+#[dharitri_sc::module]
 pub trait UserEndpointsModule: storage::StorageModule + events::EventsModule {
     fn sell_token<T>(&self)
     where

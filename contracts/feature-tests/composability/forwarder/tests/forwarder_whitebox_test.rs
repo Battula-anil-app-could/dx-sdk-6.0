@@ -1,6 +1,6 @@
 use forwarder::nft::{Color, ForwarderNftModule};
-use multiversx_sc::{contract_base::ContractBase, types::Address};
-use multiversx_sc_scenario::{
+use dharitri_sc::{contract_base::ContractBase, types::Address};
+use dharitri_sc_scenario::{
     managed_address, managed_biguint, managed_token_id, rust_biguint,
     scenario_model::{
         Account, AddressValue, CheckAccount, CheckStateStep, ScCallStep, SetStateStep,

@@ -1,19 +1,19 @@
 [package]
-name = "multiversx-chain-vm"
+name = "dharitri-chain-vm"
 version = "0.5.2"
 edition = "2021"
 
 authors = [
-    "Andrei Marinica <andrei.marinica@multiversx.com>",
-    "MultiversX <contact@multiversx.com>",
+    "Andrei Marinica <andrei.marinica@dharitri.com>",
+    "Dharitri <contact@dharitri.com>",
 ]
 license = "GPL-3.0-only"
 readme = "README.md"
-repository = "https://github.com/multiversx/mx-sdk-rs"
-homepage = "https://multiversx.com/"
-documentation = "https://docs.multiversx.com/"
-description = "MultiversX VM implementation and tooling"
-keywords = ["multiversx", "blockchain", "vm", "tools"]
+repository = "https://github.com/dharitri/mx-sdk-rs"
+homepage = "https://dharitri.com/"
+documentation = "https://docs.dharitri.com/"
+description = "Dharitri VM implementation and tooling"
+keywords = ["dharitri", "blockchain", "vm", "tools"]
 categories = ["cryptography::cryptocurrencies", "development-tools::debugging"]
 
 [dependencies]

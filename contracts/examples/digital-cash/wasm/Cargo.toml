@@ -23,6 +23,6 @@ panic = "abort"
 [dependencies.digital-cash]
 path = ".."
 
-[dependencies.multiversx-sc-wasm-adapter]
+[dependencies.dharitri-sc-wasm-adapter]
 version = "0.43.4"
 path = "../../../../framework/wasm-adapter"

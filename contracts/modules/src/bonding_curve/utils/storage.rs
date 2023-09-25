@@ -1,9 +1,9 @@
-multiversx_sc::imports!();
-multiversx_sc::derive_imports!();
+dharitri_sc::imports!();
+dharitri_sc::derive_imports!();
 
 use super::structs::TokenOwnershipData;
 
-#[multiversx_sc::module]
+#[dharitri_sc::module]
 pub trait StorageModule {
     #[storage_mapper("token_details")]
     fn token_details(

@@ -1,5 +1,5 @@
-use multiversx_sc::api::ESDT_MULTI_TRANSFER_FUNC_NAME;
-use multiversx_sc_scenario::scenario_model::ScCallStep;
+use dharitri_sc::api::ESDT_MULTI_TRANSFER_FUNC_NAME;
+use dharitri_sc_scenario::scenario_model::ScCallStep;
 use num_traits::Zero;
 
 #[test]

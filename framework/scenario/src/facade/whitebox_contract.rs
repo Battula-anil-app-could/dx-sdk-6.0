@@ -1,4 +1,4 @@
-use multiversx_sc::contract_base::{CallableContract, ContractBase};
+use dharitri_sc::contract_base::{CallableContract, ContractBase};
 
 use crate::{scenario_model::AddressKey, DebugApi};
 

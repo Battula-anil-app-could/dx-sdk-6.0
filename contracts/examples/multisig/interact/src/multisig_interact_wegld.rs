@@ -1,12 +1,12 @@
 use std::time::Duration;
 
 #[allow(unused_imports)]
-use multiversx_sc_snippets::multiversx_sc::types::{
+use dharitri_sc_snippets::dharitri_sc::types::{
     EsdtTokenPayment, MultiValueEncoded, TokenIdentifier,
 };
-use multiversx_sc_snippets::{
-    multiversx_sc::types::{ContractCall, ContractCallNoPayment},
-    multiversx_sc_scenario::{
+use dharitri_sc_snippets::{
+    dharitri_sc::types::{ContractCall, ContractCallNoPayment},
+    dharitri_sc_scenario::{
         mandos_system::ScenarioRunner, scenario_format::interpret_trait::InterpretableFrom,
         standalone::retrieve_account_as_scenario_set_state,
     },

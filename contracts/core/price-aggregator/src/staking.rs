@@ -1,7 +1,7 @@
-// TODO: Replace with the one from multiversx_sc_modules on next release
+// TODO: Replace with the one from dharitri_sc_modules on next release
 
-multiversx_sc::imports!();
-multiversx_sc::derive_imports!();
+dharitri_sc::imports!();
+dharitri_sc::derive_imports!();
 
 #[derive(TopEncode, TopDecode)]
 pub struct TokenAmountPair<M: ManagedTypeApi> {
@@ -11,7 +11,7 @@ pub struct TokenAmountPair<M: ManagedTypeApi> {
 
 static NOT_ENOUGH_STAKE_ERR_MSG: &[u8] = b"Not enough stake";
 
-#[multiversx_sc::module]
+#[dharitri_sc::module]
 pub trait StakingModule {
     fn init_staking_module(
         &self,

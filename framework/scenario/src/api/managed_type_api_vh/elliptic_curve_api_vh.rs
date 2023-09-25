@@ -1,4 +1,4 @@
-use multiversx_sc::{api::EllipticCurveApiImpl, types::BoxedBytes};
+use dharitri_sc::{api::EllipticCurveApiImpl, types::BoxedBytes};
 
 use crate::api::{VMHooksApi, VMHooksApiBackend};
 

@@ -1,5 +1,5 @@
-multiversx_sc::imports!();
-multiversx_sc::derive_imports!();
+dharitri_sc::imports!();
+dharitri_sc::derive_imports!();
 
 use super::storage;
 
@@ -20,7 +20,7 @@ pub struct ComplexAttributes<M: ManagedTypeApi> {
     pub boxed_bytes: ManagedBuffer<M>,
 }
 
-#[multiversx_sc::module]
+#[dharitri_sc::module]
 pub trait ForwarderNftModule: storage::ForwarderStorageModule {
     #[view]
     fn get_nft_balance(&self, token_identifier: &TokenIdentifier, nonce: u64) -> BigUint {

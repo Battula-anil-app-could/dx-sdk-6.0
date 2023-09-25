@@ -1,17 +1,17 @@
 [package]
 name = "benchmark-common"
 version = "0.0.0"
-authors = ["Claudiu-Marcel Bruda <claudiu.bruda@multiversx.com>"]
+authors = ["Claudiu-Marcel Bruda <claudiu.bruda@dharitri.com>"]
 edition = "2021"
 publish = false
 
 [lib]
 path = "src/lib.rs"
 
-[dependencies.multiversx-sc]
+[dependencies.dharitri-sc]
 version = "0.43.4"
 path = "../../../../framework/base"
 
-[dev-dependencies.multiversx-sc-scenario]
+[dev-dependencies.dharitri-sc-scenario]
 version = "0.43.4"
 path = "../../../../framework/scenario"

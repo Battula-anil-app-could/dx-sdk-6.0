@@ -1,13 +1,13 @@
-# MultiversX SDK for Rust
+# Dharitri SDK for Rust
 
-[![Crates.io](https://img.shields.io/crates/v/multiversx-sdk)](https://crates.io/crates/multiversx-sdk)
+[![Crates.io](https://img.shields.io/crates/v/dharitri-sdk)](https://crates.io/crates/dharitri-sdk)
 
-General purpose collection of tools & SDKs to interact with the MultiversX blockchain from Rust projects.
+General purpose collection of tools & SDKs to interact with the Dharitri blockchain from Rust projects.
 
 ## Example
 
 ```rust
-use multiversx_sdk::blockchain::rpc::{CommunicationProxy, DEVNET_GATEWAY};
+use dharitri_sdk::blockchain::rpc::{CommunicationProxy, DEVNET_GATEWAY};
 
 #[tokio::test]
 async fn get_network_config() {
@@ -22,4 +22,4 @@ More examples in `./examples`.
 
 ## Acknowledgements
 
-Project originally started by [Bicarus labs](https://github.com/bicarus-labs/elrond-sdk-erdrs), later integrated into the MultiversX official codebase.
+Project originally started by [Bicarus labs](https://github.com/bicarus-labs/dharitrix-sdk-erdrs), later integrated into the Dharitri official codebase.

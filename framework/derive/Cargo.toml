@@ -1,16 +1,16 @@
 [package]
-name = "multiversx-sc-derive"
+name = "dharitri-sc-derive"
 version = "0.43.4"
 edition = "2021"
 
-authors = ["Andrei Marinica <andrei.marinica@multiversx.com>", "MultiversX <contact@multiversx.com>"]
+authors = ["Andrei Marinica <andrei.marinica@dharitri.com>", "Dharitri <contact@dharitri.com>"]
 license = "GPL-3.0-only"
 readme = "README.md"
-repository = "https://github.com/multiversx/mx-sdk-rs"
-homepage = "https://multiversx.com/"
-documentation = "https://docs.multiversx.com/"
-description = "MultiversX smart contract API procedural macros"
-keywords = ["multiversx", "blockchain", "contract"]
+repository = "https://github.com/dharitri/mx-sdk-rs"
+homepage = "https://dharitri.com/"
+documentation = "https://docs.dharitri.com/"
+description = "Dharitri smart contract API procedural macros"
+keywords = ["dharitri", "blockchain", "contract"]
 categories = ["cryptography::cryptocurrencies", "development-tools::procedural-macro-helpers"]
 
 [dependencies]
@@ -24,5 +24,5 @@ radix_trie = "0.2.1"
 default = ["syn/full", "syn/parsing", "syn/extra-traits"]
 
 [lib]
-name = "multiversx_sc_derive"
+name = "dharitri_sc_derive"
 proc-macro = true

@@ -1,5 +1,5 @@
-use multiversx_chain_vm::mem_conv;
-use multiversx_sc::api::{const_handles, RawHandle, SendApi, SendApiImpl};
+use dharitri_chain_vm::mem_conv;
+use dharitri_sc::api::{const_handles, RawHandle, SendApi, SendApiImpl};
 
 use crate::api::{VMHooksApi, VMHooksApiBackend};
 

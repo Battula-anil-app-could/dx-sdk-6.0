@@ -1,4 +1,4 @@
-use multiversx_sc_codec::{
+use dharitri_sc_codec::{
     DecodeError, DecodeErrorHandler, TopDecode, TopDecodeInput, TopEncode, TopEncodeOutput,
 };
 
@@ -107,7 +107,7 @@ impl TypeAbi for OperationCompletionStatus {
 
 #[cfg(test)]
 mod tests {
-    use multiversx_sc_codec::test_util::check_top_encode_decode;
+    use dharitri_sc_codec::test_util::check_top_encode_decode;
 
     use super::*;
 

@@ -1,8 +1,8 @@
-multiversx_sc::imports!();
+dharitri_sc::imports!();
 
 use core::marker::PhantomData;
 
-use multiversx_sc::codec::Empty;
+use dharitri_sc::codec::Empty;
 
 use super::merged_token_instances::MergedTokenInstances;
 

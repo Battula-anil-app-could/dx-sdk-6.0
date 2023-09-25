@@ -1,19 +1,19 @@
 [package]
-name = "multiversx-sc-meta"
+name = "dharitri-sc-meta"
 version = "0.43.4"
 edition = "2021"
 
 authors = [
-    "Andrei Marinica <andrei.marinica@multiversx.com>",
-    "MultiversX <contact@multiversx.com>",
+    "Andrei Marinica <andrei.marinica@dharitri.com>",
+    "Dharitri <contact@dharitri.com>",
 ]
 license = "GPL-3.0-only"
 readme = "README.md"
-repository = "https://github.com/multiversx/mx-sdk-rs"
-homepage = "https://multiversx.com/"
-documentation = "https://docs.multiversx.com/"
-description = "MultiversX smart contract meta-programming tools and build system"
-keywords = ["multiversx", "blockchain", "contract", "debug"]
+repository = "https://github.com/dharitri/mx-sdk-rs"
+homepage = "https://dharitri.com/"
+documentation = "https://docs.dharitri.com/"
+description = "Dharitri smart contract meta-programming tools and build system"
+keywords = ["dharitri", "blockchain", "contract", "debug"]
 categories = ["cryptography::cryptocurrencies", "development-tools::debugging"]
 
 [[bin]]
@@ -44,7 +44,7 @@ lazy_static = "1.4.0"
 convert_case = "0.6.0"
 hex = "0.4"
 
-[dependencies.multiversx-sc]
+[dependencies.dharitri-sc]
 version = "=0.43.4"
 path = "../base"
 features = ["alloc", "num-bigint", "promises"]

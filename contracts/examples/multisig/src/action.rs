@@ -1,9 +1,9 @@
-use multiversx_sc::{
+use dharitri_sc::{
     api::ManagedTypeApi,
     types::{BigUint, CodeMetadata, ManagedAddress, ManagedBuffer, ManagedVec},
 };
 
-multiversx_sc::derive_imports!();
+dharitri_sc::derive_imports!();
 
 #[derive(NestedEncode, NestedDecode, TypeAbi, Clone)]
 pub struct CallActionData<M: ManagedTypeApi> {
@@ -56,7 +56,7 @@ pub struct ActionFullInfo<M: ManagedTypeApi> {
 
 #[cfg(test)]
 mod test {
-    use multiversx_sc_scenario::api::StaticApi;
+    use dharitri_sc_scenario::api::StaticApi;
 
     use super::Action;
 

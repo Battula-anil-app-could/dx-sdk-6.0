@@ -1,3 +1,3 @@
 fn main() {
-    multiversx_sc_meta::cli_main::<multiversx_price_aggregator_sc::AbiProvider>();
+    dharitri_sc_meta::cli_main::<dharitri_price_aggregator_sc::AbiProvider>();
 }

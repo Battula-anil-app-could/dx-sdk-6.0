@@ -1,4 +1,4 @@
-use multiversx_sc::types::H256;
+use dharitri_sc::types::H256;
 
 use crate::{
     api::StaticApi,
@@ -6,7 +6,7 @@ use crate::{
     scenario_model::TxResponse,
 };
 
-use crate::multiversx_sc::{
+use crate::dharitri_sc::{
     codec::{CodecFrom, PanicErrorHandler, TopEncodeMulti},
     types::{ContractCall, ManagedArgBuffer},
 };

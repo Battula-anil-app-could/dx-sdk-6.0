@@ -1,8 +1,8 @@
 use crate::big_float_operators;
 
-multiversx_sc::imports!();
+dharitri_sc::imports!();
 
-#[multiversx_sc::module]
+#[dharitri_sc::module]
 pub trait BigFloatWrappedOperators: big_float_operators::BigFloatOperators {
     #[endpoint]
     fn add_big_float_wrapped(&self, a: BigInt, b: BigInt, fixed_point_denominator: i64) -> BigInt {

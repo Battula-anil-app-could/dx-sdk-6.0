@@ -1,5 +1,5 @@
-use multiversx_sc::contract_base::StorageRawWrapper;
-use multiversx_sc_scenario::api::SingleTxApi;
+use dharitri_sc::contract_base::StorageRawWrapper;
+use dharitri_sc_scenario::api::SingleTxApi;
 
 #[test]
 fn single_tx_api_test() {

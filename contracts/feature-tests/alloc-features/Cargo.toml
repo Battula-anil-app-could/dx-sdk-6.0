@@ -1,19 +1,19 @@
 [package]
 name = "alloc-features"
 version = "0.0.0"
-authors = ["Andrei Marinica <andrei.marinica@multiversx.com>"]
+authors = ["Andrei Marinica <andrei.marinica@dharitri.com>"]
 edition = "2021"
 publish = false
 
 [lib]
 path = "src/alloc_features_main.rs"
 
-[dependencies.multiversx-sc]
+[dependencies.dharitri-sc]
 version = "0.43.4"
 path = "../../../framework/base"
 features = ["alloc"]
 
-[dev-dependencies.multiversx-sc-scenario]
+[dev-dependencies.dharitri-sc-scenario]
 version = "0.43.4"
 path = "../../../framework/scenario"
 

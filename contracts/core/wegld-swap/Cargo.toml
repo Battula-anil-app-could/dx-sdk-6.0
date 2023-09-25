@@ -1,32 +1,32 @@
 [package]
-name = "multiversx-wegld-swap-sc"
+name = "dharitri-wegld-swap-sc"
 version = "0.43.4"
 
 authors = [
-    "Dorin Iancu <dorin.iancu@multiversx.com>",
-    "MultiversX <contact@multiversx.com>",
+    "Dorin Iancu <dorin.iancu@dharitri.com>",
+    "Dharitri <contact@dharitri.com>",
 ]
 license = "GPL-3.0-only"
 readme = "README.md"
-repository = "https://github.com/multiversx/mx-sdk-rs"
-homepage = "https://multiversx.com/"
-documentation = "https://docs.multiversx.com/"
-description = "MultiversX Wrapped EGLD Smart Contract"
-keywords = ["multiversx", "wasm", "webassembly", "blockchain", "contract"]
+repository = "https://github.com/dharitri/mx-sdk-rs"
+homepage = "https://dharitri.com/"
+documentation = "https://docs.dharitri.com/"
+description = "Dharitri Wrapped EGLD Smart Contract"
+keywords = ["dharitri", "wasm", "webassembly", "blockchain", "contract"]
 categories = ["no-std", "wasm", "cryptography::cryptocurrencies"]
 edition = "2021"
 
 [lib]
 path = "src/wegld.rs"
 
-[dependencies.multiversx-sc]
+[dependencies.dharitri-sc]
 version = "0.43.4"
 path = "../../../framework/base"
 
-[dependencies.multiversx-sc-modules]
+[dependencies.dharitri-sc-modules]
 version = "0.43.4"
 path = "../../../contracts/modules"
 
-[dev-dependencies.multiversx-sc-scenario]
+[dev-dependencies.dharitri-sc-scenario]
 version = "0.43.4"
 path = "../../../framework/scenario"

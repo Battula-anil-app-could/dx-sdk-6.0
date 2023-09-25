@@ -1,11 +1,11 @@
 #![no_std]
 
-multiversx_sc::imports!();
+dharitri_sc::imports!();
 
 mod pause_proxy {
-    multiversx_sc::imports!();
+    dharitri_sc::imports!();
 
-    #[multiversx_sc::proxy]
+    #[dharitri_sc::proxy]
     pub trait Pausable {
         #[endpoint]
         fn pause(&self);
@@ -15,7 +15,7 @@ mod pause_proxy {
     }
 }
 
-#[multiversx_sc::contract]
+#[dharitri_sc::contract]
 pub trait PauseProxy {
     #[init]
     fn init(&self) {

@@ -1,4 +1,4 @@
-use multiversx_sc::api::ManagedMapApiImpl;
+use dharitri_sc::api::ManagedMapApiImpl;
 
 #[allow(dead_code)]
 extern "C" {

@@ -1,6 +1,6 @@
-multiversx_sc::imports!();
+dharitri_sc::imports!();
 
-#[multiversx_sc::module]
+#[dharitri_sc::module]
 pub trait ForwarderRawCommon {
     #[view]
     #[storage_mapper("callback_args")]
@@ -27,14 +27,14 @@ pub trait ForwarderRawCommon {
         self.callback_payments().clear();
     }
 
-    /// Used in the elrond-go tests, do not remove.
+    /// Used in the dharitrix-go tests, do not remove.
     #[view]
     fn callback_args_at_index(&self, index: usize) -> MultiValueEncoded<ManagedBuffer> {
         let cb_args = self.callback_args().get(index);
         cb_args.into()
     }
 
-    /// Used in the elrond-go tests, do not remove.
+    /// Used in the dharitrix-go tests, do not remove.
     #[view]
     fn callback_payment_at_index(
         &self,

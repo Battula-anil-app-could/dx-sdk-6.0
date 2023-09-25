@@ -1,8 +1,8 @@
-use multiversx_chain_vm::{
+use dharitri_chain_vm::{
     executor::VMHooks,
     vm_hooks::{StaticApiVMHooksHandler, VMHooksDispatcher, VMHooksHandler},
 };
-use multiversx_sc::{api::RawHandle, types::Address};
+use dharitri_sc::{api::RawHandle, types::Address};
 
 use crate::debug_executor::StaticVarData;
 

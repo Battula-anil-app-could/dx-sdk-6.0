@@ -1,19 +1,19 @@
 [package]
-name = "multiversx-sdk"
+name = "dharitri-sdk"
 version = "0.2.0"
 edition = "2021"
 
 authors = [
-    "MultiversX <contact@multiversx.com>",
+    "Dharitri <contact@dharitri.com>",
 ]
 license = "MIT"
 readme = "README.md"
-repository = "https://github.com/multiversx/mx-sdk-rs"
-homepage = "https://multiversx.com/"
-documentation = "https://docs.multiversx.com/"
-description = "SDK for interacting with the MultiversX blockchain"
+repository = "https://github.com/dharitri/mx-sdk-rs"
+homepage = "https://dharitri.com/"
+documentation = "https://docs.dharitri.com/"
+description = "SDK for interacting with the Dharitri blockchain"
 categories = ["cryptography::cryptocurrencies", "api-bindings"]
-keywords = ["multiversx", "blockchain", "sdk", "api"]
+keywords = ["dharitri", "blockchain", "sdk", "api"]
 
 [dependencies]
 tokio = { version = "1.24", features = ["full"] }

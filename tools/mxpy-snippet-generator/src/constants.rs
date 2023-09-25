@@ -34,9 +34,9 @@ pub const NFT_TRANSFER_FUNC_NAME: &str = "ESDTNFTTransfer";
 pub const MULTI_TRANSFER_FUNC_NAME: &str = "MultiESDTNFTTransfer";
 
 // default proxies
-pub const TESTNET_PROXY: &str = "https://testnet-gateway.multiversx.com";
-pub const DEVNET_PROXY: &str = "https://devnet-gateway.multiversx.com";
-pub const MAINNET_PROXY: &str = "https://gateway.multiversx.com";
+pub const TESTNET_PROXY: &str = "https://testnet-gateway.dharitri.com";
+pub const DEVNET_PROXY: &str = "https://devnet-gateway.dharitri.com";
+pub const MAINNET_PROXY: &str = "https://gateway.dharitri.com";
 
 // default chain IDs
 pub const TESTNET_CHAIN_ID: &str = "T";

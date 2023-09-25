@@ -1,4 +1,4 @@
-use multiversx_sc::{
+use dharitri_sc::{
     codec::multi_types::OptionalValue,
     esdt::ESDTSystemSmartContractProxy,
     types::{
@@ -7,7 +7,7 @@ use multiversx_sc::{
         ManagedBuffer, ManagedByteArray, ManagedOption, ManagedType, ManagedVec, TokenIdentifier,
     },
 };
-use multiversx_sc_scenario::{
+use dharitri_sc_scenario::{
     api::{DebugHandle, DebugApi},
     num_bigint::{BigInt as RustBigInt, BigUint as RustBigUint},
 };
@@ -173,7 +173,7 @@ fn main() {
         "(3) { [0] = (2) 0x6162, [1] = (4) 0x61626364, [2] = (12) 0x6162636465666768696a6b6c }"
     );
 
-    // 6. MultiversX codec - Multi-types
+    // 6. Dharitri codec - Multi-types
     let optional_value_some: OptionalValue<BigUint<DebugApi>> =
         OptionalValue::Some(BigUint::from(42u64));
     push!(to_check, optional_value_some, "OptionalValue::Some(42)");

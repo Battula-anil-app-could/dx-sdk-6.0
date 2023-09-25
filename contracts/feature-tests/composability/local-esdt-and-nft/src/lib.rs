@@ -1,7 +1,7 @@
 #![no_std]
 
-multiversx_sc::imports!();
-multiversx_sc::derive_imports!();
+dharitri_sc::imports!();
+dharitri_sc::derive_imports!();
 
 // used as mock attributes for NFTs
 #[derive(TopEncode, TopDecode, TypeAbi)]
@@ -11,7 +11,7 @@ pub struct Color {
     b: u8,
 }
 
-#[multiversx_sc::contract]
+#[dharitri_sc::contract]
 pub trait LocalEsdtAndEsdtNft {
     #[init]
     fn init(&self) {}

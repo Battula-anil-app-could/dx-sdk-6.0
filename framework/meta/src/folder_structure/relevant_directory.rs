@@ -9,16 +9,16 @@ use super::version_req::VersionReq;
 
 /// Used for retrieving crate versions.
 pub const FRAMEWORK_CRATE_NAMES: &[&str] = &[
-    "multiversx-sc",
-    "multiversx-sc-meta",
-    "multiversx-sc-scenario",
-    "multiversx-sc-wasm-adapter",
-    "multiversx-sc-modules",
-    "elrond-wasm",
-    "elrond-wasm-debug",
-    "elrond-wasm-modules",
-    "elrond-wasm-node",
-    "elrond-interact-snippets",
+    "dharitri-sc",
+    "dharitri-sc-meta",
+    "dharitri-sc-scenario",
+    "dharitri-sc-wasm-adapter",
+    "dharitri-sc-modules",
+    "dharitrix-wasm",
+    "dharitrix-wasm-debug",
+    "dharitrix-wasm-modules",
+    "dharitrix-wasm-node",
+    "dharitrix-interact-snippets",
 ];
 
 pub const CARGO_TOML_FILE_NAME: &str = "Cargo.toml";
@@ -149,7 +149,7 @@ fn populate_directories(path: &Path, ignore: &[String], result: &mut Vec<Relevan
 }
 
 fn is_marked_contract_crate_dir(path: &Path) -> bool {
-    path.join("multiversx.json").is_file() || path.join("elrond.json").is_file()
+    path.join("dharitri.json").is_file() || path.join("dharitrix.json").is_file()
 }
 
 fn can_continue_recursion(dir_entry: &DirEntry, blacklist: &[String]) -> bool {

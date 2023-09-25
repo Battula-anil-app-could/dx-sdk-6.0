@@ -1,8 +1,8 @@
-multiversx_sc::imports!();
+dharitri_sc::imports!();
 
 use crate::{storage, zombie_factory, zombie_feeding, zombie_helper};
 
-#[multiversx_sc::module]
+#[dharitri_sc::module]
 pub trait ZombieAttack:
     storage::Storage
     + zombie_feeding::ZombieFeeding

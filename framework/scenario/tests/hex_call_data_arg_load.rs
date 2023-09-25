@@ -1,6 +1,6 @@
 #![feature(exhaustive_patterns)]
 
-use multiversx_sc::{
+use dharitri_sc::{
     codec::{
         multi_types::{MultiValue2, MultiValueVec, OptionalValue},
         PanicErrorHandler, TopDecodeMulti, TopDecodeMultiInput,
@@ -8,7 +8,7 @@ use multiversx_sc::{
     types::{AsyncCallResult, BigUint},
     HexCallDataDeserializer,
 };
-use multiversx_sc_scenario::api::StaticApi;
+use dharitri_sc_scenario::api::StaticApi;
 
 #[test]
 fn test_simple_args() {

@@ -1,16 +1,16 @@
-multiversx_sc::imports!();
+dharitri_sc::imports!();
 
-use multiversx_sc::types::String;
+use dharitri_sc::types::String;
 
 /// Legacy, deprecated macros. Will b removed once they get removed.
 ///
 /// Error conversions should be moved to corresponding new formatter-based error tests.
-#[multiversx_sc::module]
+#[dharitri_sc::module]
 pub trait MacroFeaturesLegacy {
     #[allow(deprecated)]
     #[view]
     fn only_owner_legacy(&self) -> SCResult<()> {
-        multiversx_sc::only_owner!(self, "Custom only owner message");
+        dharitri_sc::only_owner!(self, "Custom only owner message");
         Ok(())
     }
 

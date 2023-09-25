@@ -8,15 +8,15 @@ publish = false
 name = "format-tests"
 path = "src/format_tests.rs"
 
-[dependencies.multiversx-sc]
+[dependencies.dharitri-sc]
 version = "0.43.4"
 path = "../../../framework/base"
 
-[dependencies.multiversx-sc-scenario]
+[dependencies.dharitri-sc-scenario]
 version = "0.43.4"
 path = "../../../framework/scenario"
 
-[dependencies.multiversx-chain-vm]
+[dependencies.dharitri-chain-vm]
 version = "0.5.2"
 path = "../../../vm"
 

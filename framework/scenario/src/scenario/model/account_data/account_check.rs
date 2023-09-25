@@ -1,4 +1,4 @@
-use multiversx_sc::codec::{top_encode_to_vec_u8_or_panic, TopEncode};
+use dharitri_sc::codec::{top_encode_to_vec_u8_or_panic, TopEncode};
 
 use crate::{
     scenario::model::{

@@ -1,5 +1,5 @@
-use multiversx_sc::types::{BoxedBytes, ManagedAddress, ManagedBuffer};
-use multiversx_sc_scenario::api::StaticApi;
+use dharitri_sc::types::{BoxedBytes, ManagedAddress, ManagedBuffer};
+use dharitri_sc_scenario::api::StaticApi;
 
 use alloc_features::managed_buffer_features_alloc::ManagedBufferFeatures;
 

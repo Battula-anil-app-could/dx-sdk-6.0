@@ -51,16 +51,16 @@ fn v_0_39_prepare_meta(sc_crate_path: &Path) {
     let mut meta_cargo_toml = CargoTomlContents::load_from_file(&cargo_toml_path);
     let deps = meta_cargo_toml.dependencies_mut();
 
-    print_cargo_dep_remove(cargo_toml_path.as_path(), "elrond-wasm");
-    deps.remove("elrond-wasm");
+    print_cargo_dep_remove(cargo_toml_path.as_path(), "dharitrix-wasm");
+    deps.remove("dharitrix-wasm");
 
-    print_cargo_dep_remove(cargo_toml_path.as_path(), "elrond-wasm-debug");
-    deps.remove("elrond-wasm-debug");
+    print_cargo_dep_remove(cargo_toml_path.as_path(), "dharitrix-wasm-debug");
+    deps.remove("dharitrix-wasm-debug");
 
-    print_cargo_dep_add(cargo_toml_path.as_path(), "multiversx-sc-meta");
+    print_cargo_dep_add(cargo_toml_path.as_path(), "dharitri-sc-meta");
     let mut meta_dep = Table::new();
     meta_dep.insert("version".to_string(), Value::String("0.39.0".to_string()));
-    deps.insert("multiversx-sc-meta".to_string(), Value::Table(meta_dep));
+    deps.insert("dharitri-sc-meta".to_string(), Value::Table(meta_dep));
 
     meta_cargo_toml.save_to_file(&cargo_toml_path);
 }
@@ -75,8 +75,8 @@ fn v_0_39_prepare_wasm(sc_crate_path: &Path) {
     let mut meta_cargo_toml = CargoTomlContents::load_from_file(&cargo_toml_path);
     let deps = meta_cargo_toml.dependencies_mut();
 
-    print_cargo_dep_remove(cargo_toml_path.as_path(), "elrond-wasm-output");
-    deps.remove("elrond-wasm-output");
+    print_cargo_dep_remove(cargo_toml_path.as_path(), "dharitrix-wasm-output");
+    deps.remove("dharitrix-wasm-output");
 
     meta_cargo_toml.save_to_file(&cargo_toml_path);
 }
@@ -86,10 +86,10 @@ fn v_0_39_replace_in_files(sc_crate_path: &Path) {
         sc_crate_path,
         "*Cargo.toml",
         &[
-            Query::substring("elrond-wasm-debug", "multiversx-sc-scenario"),
-            Query::substring("elrond-wasm-modules", "multiversx-sc-modules"),
-            Query::substring("elrond-wasm-node", "multiversx-sc-wasm-adapter"),
-            Query::substring("elrond-wasm", "multiversx-sc"),
+            Query::substring("dharitrix-wasm-debug", "dharitri-sc-scenario"),
+            Query::substring("dharitrix-wasm-modules", "dharitri-sc-modules"),
+            Query::substring("dharitrix-wasm-node", "dharitri-sc-wasm-adapter"),
+            Query::substring("dharitrix-wasm", "dharitri-sc"),
         ][..],
     );
 
@@ -97,23 +97,23 @@ fn v_0_39_replace_in_files(sc_crate_path: &Path) {
         sc_crate_path,
         "*rs",
         &[
-            Query::substring("elrond_codec", "codec"),
+            Query::substring("dharitrix_codec", "codec"),
             Query::substring(
-                "elrond_wasm_debug::meta::perform",
-                "multiversx_sc_meta::cli_main",
+                "dharitrix_wasm_debug::meta::perform",
+                "dharitri_sc_meta::cli_main",
             ),
             Query::substring(
-                "elrond_wasm_debug::mandos_go",
-                "multiversx_sc_scenario::run_go",
+                "dharitrix_wasm_debug::mandos_go",
+                "dharitri_sc_scenario::run_go",
             ),
             Query::substring(
-                "elrond_wasm_debug::mandos_rs",
-                "multiversx_sc_scenario::run_rs",
+                "dharitrix_wasm_debug::mandos_rs",
+                "dharitri_sc_scenario::run_rs",
             ),
-            Query::substring("elrond_wasm_debug", "multiversx_sc_scenario"),
-            Query::substring("elrond_wasm_modules", "multiversx_sc_modules"),
-            Query::substring("elrond_wasm_node", "multiversx_sc_wasm_adapter"),
-            Query::substring("elrond_wasm", "multiversx_sc"),
+            Query::substring("dharitrix_wasm_debug", "dharitri_sc_scenario"),
+            Query::substring("dharitrix_wasm_modules", "dharitri_sc_modules"),
+            Query::substring("dharitrix_wasm_node", "dharitri_sc_wasm_adapter"),
+            Query::substring("dharitrix_wasm", "dharitri_sc"),
             Query::substring("BlockchainMock", "ScenarioWorld"),
             Query::substring("testing_framework", "whitebox"),
             Query::substring("tx_mock", "whitebox"),

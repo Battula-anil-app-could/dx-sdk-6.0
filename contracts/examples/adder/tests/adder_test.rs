@@ -1,6 +1,6 @@
 use adder::*;
-use multiversx_sc::types::BigUint;
-use multiversx_sc_scenario::api::SingleTxApi;
+use dharitri_sc::types::BigUint;
+use dharitri_sc_scenario::api::SingleTxApi;
 
 #[test]
 fn adder_unit_test() {

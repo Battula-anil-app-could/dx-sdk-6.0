@@ -1,8 +1,8 @@
 #![no_std]
 
-multiversx_sc::imports!();
+dharitri_sc::imports!();
 
-#[multiversx_sc::contract]
+#[dharitri_sc::contract]
 pub trait SecondContract {
     #[init]
     fn init(&self, esdt_token_identifier: EgldOrEsdtTokenIdentifier) {

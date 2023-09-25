@@ -3,7 +3,7 @@ mod utils;
 
 use std::iter::zip;
 
-use multiversx_sc::{
+use dharitri_sc::{
     codec::multi_types::MultiValue2,
     storage::mappers::SingleValue,
     types::{
@@ -11,7 +11,7 @@ use multiversx_sc::{
         OperationCompletionStatus, TokenIdentifier,
     },
 };
-use multiversx_sc_scenario::{
+use dharitri_sc_scenario::{
     api::StaticApi,
     scenario_model::{
         Account, AddressValue, CheckAccount, CheckStateStep, ScCallStep, ScDeployStep, ScQueryStep,

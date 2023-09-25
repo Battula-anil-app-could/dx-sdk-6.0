@@ -1,4 +1,4 @@
-use multiversx_sdk::{
+use dharitri_sdk::{
     blockchain::{CommunicationProxy, DEVNET_GATEWAY},
     data::address::Address,
 };

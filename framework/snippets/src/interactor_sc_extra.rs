@@ -1,7 +1,7 @@
 use crate::Interactor;
-use multiversx_sc_scenario::{
+use dharitri_sc_scenario::{
     api::StaticApi,
-    multiversx_sc::{
+    dharitri_sc::{
         codec::{CodecFrom, TopEncodeMulti},
         types::{Address, ContractCall},
     },

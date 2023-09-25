@@ -1,7 +1,7 @@
-multiversx_sc::imports!();
-multiversx_sc::derive_imports!();
+dharitri_sc::imports!();
+dharitri_sc::derive_imports!();
 
-use multiversx_sc::contract_base::ManagedSerializer;
+use dharitri_sc::contract_base::ManagedSerializer;
 
 #[derive(TopEncode, TopDecode)]
 pub struct FractionalUriInfo<M: ManagedTypeApi> {

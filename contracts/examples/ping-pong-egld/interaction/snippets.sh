@@ -1,7 +1,7 @@
 PEM_FILE="./ping-pong.pem"
 PING_PONG_CONTRACT="./mx-sdk-rs/contracts/examples/ping-pong-egld"
 
-PROXY_ARGUMENT="--proxy=https://devnet-api.multiversx.com"
+PROXY_ARGUMENT="--proxy=https://devnet-api.dharitri.com"
 CHAIN_ARGUMENT="--chain=D"
 
 build_ping_pong() {

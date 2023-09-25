@@ -1,7 +1,7 @@
-multiversx_sc::imports!();
+dharitri_sc::imports!();
 
 /// Test contract for investigating the new async call framework.
-#[multiversx_sc::module]
+#[dharitri_sc::module]
 pub trait CallPromisesDirectModule {
     #[proxy]
     fn vault_proxy(&self) -> vault::Proxy<Self::Api>;

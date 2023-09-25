@@ -14,7 +14,7 @@ mod only_owner_derived_mod;
 mod only_owner_mod;
 pub mod token_merge_mod_impl;
 
-multiversx_sc::imports!();
+dharitri_sc::imports!();
 
 /// Contract that tests that using modules works correctly.
 /// Also provides testing for the most common modules:
@@ -23,7 +23,7 @@ multiversx_sc::imports!();
 /// - EsdtModule
 /// - GovernanceModule
 /// - PauseModule
-#[multiversx_sc::contract]
+#[dharitri_sc::contract]
 pub trait UseModule:
     ContractBase
     + contract_base_full_path_mod::ContractBaseFullPathTestModule
@@ -38,20 +38,20 @@ pub trait UseModule:
     + only_admin_derived_mod::OnlyAdminDerivedTestModule
     + ongoing_operation_mod_example::OngoingOperationModExample
     + token_merge_mod_impl::TokenMergeModImpl
-    + multiversx_sc_modules::claim_developer_rewards::ClaimDeveloperRewardsModule
-    + multiversx_sc_modules::dns::DnsModule
-    + multiversx_sc_modules::esdt::EsdtModule
-    + multiversx_sc_modules::features::FeaturesModule
-    + multiversx_sc_modules::governance::GovernanceModule
-    + multiversx_sc_modules::governance::governance_configurable::GovernanceConfigurablePropertiesModule
-    + multiversx_sc_modules::governance::governance_events::GovernanceEventsModule
-    + multiversx_sc_modules::pause::PauseModule
-    + multiversx_sc_modules::staking::StakingModule
-    + multiversx_sc_modules::token_merge::TokenMergeModule
-    + multiversx_sc_modules::token_merge::merged_token_setup::MergedTokenSetupModule
-    + multiversx_sc_modules::default_issue_callbacks::DefaultIssueCallbacksModule
-    + multiversx_sc_modules::only_admin::OnlyAdminModule
-    + multiversx_sc_modules::ongoing_operation::OngoingOperationModule
+    + dharitri_sc_modules::claim_developer_rewards::ClaimDeveloperRewardsModule
+    + dharitri_sc_modules::dns::DnsModule
+    + dharitri_sc_modules::esdt::EsdtModule
+    + dharitri_sc_modules::features::FeaturesModule
+    + dharitri_sc_modules::governance::GovernanceModule
+    + dharitri_sc_modules::governance::governance_configurable::GovernanceConfigurablePropertiesModule
+    + dharitri_sc_modules::governance::governance_events::GovernanceEventsModule
+    + dharitri_sc_modules::pause::PauseModule
+    + dharitri_sc_modules::staking::StakingModule
+    + dharitri_sc_modules::token_merge::TokenMergeModule
+    + dharitri_sc_modules::token_merge::merged_token_setup::MergedTokenSetupModule
+    + dharitri_sc_modules::default_issue_callbacks::DefaultIssueCallbacksModule
+    + dharitri_sc_modules::only_admin::OnlyAdminModule
+    + dharitri_sc_modules::ongoing_operation::OngoingOperationModule
 {
     /// Validates that the "featureName" feature is on.
     /// Uses the `feature_guard!` macro.

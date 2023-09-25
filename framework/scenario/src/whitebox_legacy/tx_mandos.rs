@@ -1,8 +1,8 @@
-use crate::multiversx_sc::{
+use crate::dharitri_sc::{
     codec::{top_encode_to_vec_u8_or_panic, TopEncode},
     types::heap::Address,
 };
-use multiversx_chain_vm::tx_mock::TxTokenTransfer;
+use dharitri_chain_vm::tx_mock::TxTokenTransfer;
 use num_traits::Zero;
 
 pub struct ScCallMandos {

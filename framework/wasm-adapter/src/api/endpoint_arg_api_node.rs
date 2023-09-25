@@ -1,5 +1,5 @@
 use crate::api::VmApiImpl;
-use multiversx_sc::{
+use dharitri_sc::{
     api::{EndpointArgumentApi, EndpointArgumentApiImpl},
     types::heap::BoxedBytes,
 };

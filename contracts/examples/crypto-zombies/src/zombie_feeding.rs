@@ -1,12 +1,12 @@
-multiversx_sc::imports!();
-multiversx_sc::derive_imports!();
+dharitri_sc::imports!();
+dharitri_sc::derive_imports!();
 
 use crate::{storage, zombie_factory, zombie_helper};
 use crypto_kitties_proxy::Kitty;
 
 mod crypto_kitties_proxy {
-    multiversx_sc::imports!();
-    multiversx_sc::derive_imports!();
+    dharitri_sc::imports!();
+    dharitri_sc::derive_imports!();
 
     #[derive(NestedEncode, NestedDecode, TopEncode, TopDecode, TypeAbi)]
     pub struct Kitty {
@@ -22,14 +22,14 @@ mod crypto_kitties_proxy {
         pub genes: u64,
     }
 
-    #[multiversx_sc::proxy]
+    #[dharitri_sc::proxy]
     pub trait CryptoKitties {
         #[endpoint]
         fn get_kitty(&self, id: usize) -> Kitty;
     }
 }
 
-#[multiversx_sc::module]
+#[dharitri_sc::module]
 pub trait ZombieFeeding:
     storage::Storage + zombie_factory::ZombieFactory + zombie_helper::ZombieHelper
 {

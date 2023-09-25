@@ -1,9 +1,9 @@
-multiversx_sc::imports!();
-multiversx_sc::derive_imports!();
+dharitri_sc::imports!();
+dharitri_sc::derive_imports!();
 
 use crate::zombie::Zombie;
 
-#[multiversx_sc::module]
+#[dharitri_sc::module]
 pub trait Storage {
     #[view]
     #[storage_mapper("dna_digits")]

@@ -1,7 +1,7 @@
 use core::ops::Deref;
 
-multiversx_sc::imports!();
-multiversx_sc::derive_imports!();
+dharitri_sc::imports!();
+dharitri_sc::derive_imports!();
 
 pub const MAX_MERGED_TOKENS: usize = 25;
 

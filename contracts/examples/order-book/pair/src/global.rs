@@ -1,7 +1,7 @@
-multiversx_sc::imports!();
-multiversx_sc::derive_imports!();
+dharitri_sc::imports!();
+dharitri_sc::derive_imports!();
 
-#[multiversx_sc::module]
+#[dharitri_sc::module]
 pub trait GlobalOperationModule {
     #[only_owner]
     #[endpoint(startGlobalOperation)]

@@ -1,6 +1,6 @@
-use crate::multiversx_sc::types::Address;
-use multiversx_chain_vm::tx_mock::TxResult;
-use multiversx_sdk::data::transaction::{
+use crate::dharitri_sc::types::Address;
+use dharitri_chain_vm::tx_mock::TxResult;
+use dharitri_sdk::data::transaction::{
     ApiLogs, ApiSmartContractResult, Events, TransactionOnNetwork,
 };
 
@@ -207,7 +207,7 @@ impl TxResponse {
 
 #[cfg(test)]
 mod tests {
-    use multiversx_sdk::data::transaction::{TransactionInfo, TransactionOnNetwork};
+    use dharitri_sdk::data::transaction::{TransactionInfo, TransactionOnNetwork};
     use crate::scenario_model::TxResponse;
 
     #[test]

@@ -1,7 +1,7 @@
 use std::time::Duration;
 
-use multiversx_sc_scenario::multiversx_sc::codec::multi_types::IgnoreValue;
-use multiversx_sc_snippets::multiversx_sc::codec::test_util::top_encode_to_vec_u8_or_panic;
+use dharitri_sc_scenario::dharitri_sc::codec::multi_types::IgnoreValue;
+use dharitri_sc_snippets::dharitri_sc::codec::test_util::top_encode_to_vec_u8_or_panic;
 
 use super::*;
 

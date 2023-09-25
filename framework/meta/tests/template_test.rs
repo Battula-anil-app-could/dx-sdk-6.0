@@ -1,4 +1,4 @@
-use multiversx_sc_meta::{
+use dharitri_sc_meta::{
     template::{
         template_names_from_repo, ContractCreator, ContractCreatorTarget, RepoSource, RepoVersion,
     },
@@ -17,7 +17,12 @@ const BUILD_CONTRACTS: bool = true;
 fn test_template_list() {
     let workspace_path = find_workspace();
     let repo_source = RepoSource::from_local_path(workspace_path);
-    let mut template_names = template_names_from_repo(&repo_source);
+     let mut template_names = template_names_from_repo(&repo_source);
+    // let mut template_names =[
+    //     "adder".to_string(),
+    //     "crypto-zombies".to_string(),
+    //     "empty".to_string()
+    // ];
     template_names.sort();
     assert_eq!(
         template_names,
@@ -150,7 +155,7 @@ pub fn cargo_test(target: &ContractCreatorTarget) {
     ];
     if BUILD_CONTRACTS {
         args.push("--features");
-        args.push("multiversx-sc-scenario/run-go-tests");
+        args.push("dharitri-sc-scenario/run-go-tests");
     }
 
     let exit_status = Command::new("cargo")

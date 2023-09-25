@@ -1,5 +1,5 @@
-use multiversx_sc::types::{ManagedAddress, ManagedBuffer};
-use multiversx_sc_scenario::{api::StaticApi, *};
+use dharitri_sc::types::{ManagedAddress, ManagedBuffer};
+use dharitri_sc_scenario::{api::StaticApi, *};
 
 use basic_features::managed_buffer_features::ManagedBufferFeatures;
 

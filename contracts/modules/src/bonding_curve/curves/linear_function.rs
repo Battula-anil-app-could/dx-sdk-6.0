@@ -1,5 +1,5 @@
-multiversx_sc::imports!();
-multiversx_sc::derive_imports!();
+dharitri_sc::imports!();
+dharitri_sc::derive_imports!();
 
 use crate::bonding_curve::{curves::curve_function::CurveFunction, utils::structs::CurveArguments};
 

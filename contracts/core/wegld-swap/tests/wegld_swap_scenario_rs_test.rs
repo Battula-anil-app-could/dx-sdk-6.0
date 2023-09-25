@@ -1,12 +1,12 @@
-use multiversx_sc_scenario::*;
+use dharitri_sc_scenario::*;
 
 fn world() -> ScenarioWorld {
     let mut blockchain = ScenarioWorld::new();
     blockchain.set_current_dir_from_workspace("contracts/core/wegld-swap");
 
     blockchain.register_contract(
-        "file:output/multiversx-wegld-swap-sc.wasm",
-        multiversx_wegld_swap_sc::ContractBuilder,
+        "file:output/dharitri-wegld-swap-sc.wasm",
+        dharitri_wegld_swap_sc::ContractBuilder,
     );
     blockchain
 }

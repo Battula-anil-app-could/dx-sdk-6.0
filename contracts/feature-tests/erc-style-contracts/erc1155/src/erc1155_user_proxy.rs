@@ -1,6 +1,6 @@
-multiversx_sc::imports!();
+dharitri_sc::imports!();
 
-#[multiversx_sc::proxy]
+#[dharitri_sc::proxy]
 pub trait Erc1155UserProxy {
     #[endpoint(onERC1155Received)]
     fn on_erc1155_received(

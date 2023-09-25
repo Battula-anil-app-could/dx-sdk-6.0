@@ -1,10 +1,10 @@
 use std::marker::PhantomData;
 
-use multiversx_sc::{codec::PanicErrorHandler, types::ContractDeploy};
+use dharitri_sc::{codec::PanicErrorHandler, types::ContractDeploy};
 
 use crate::{
     api::StaticApi,
-    multiversx_sc::{
+    dharitri_sc::{
         codec::{CodecFrom, TopEncodeMulti},
         types::{Address, CodeMetadata},
     },

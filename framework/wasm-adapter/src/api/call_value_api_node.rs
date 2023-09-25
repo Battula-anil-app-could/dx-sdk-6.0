@@ -1,5 +1,5 @@
 use super::VmApiImpl;
-use multiversx_sc::api::{CallValueApi, CallValueApiImpl};
+use dharitri_sc::api::{CallValueApi, CallValueApiImpl};
 
 extern "C" {
     fn checkNoPayment();

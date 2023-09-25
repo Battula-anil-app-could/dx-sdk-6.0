@@ -1,9 +1,9 @@
 use crowdfunding_esdt::{ProxyTrait as _, Status};
-use multiversx_sc::{
+use dharitri_sc::{
     storage::mappers::SingleValue,
     types::{Address, EgldOrEsdtTokenIdentifier},
 };
-use multiversx_sc_scenario::{
+use dharitri_sc_scenario::{
     api::StaticApi,
     scenario_model::{
         Account, AddressValue, CheckAccount, CheckStateStep, ScCallStep, ScDeployStep, ScQueryStep,
